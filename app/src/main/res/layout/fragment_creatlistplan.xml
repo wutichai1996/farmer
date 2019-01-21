@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".CreatlistplanFragment">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="สร้างแผนการปลูก"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:text="เลือกแผนการปลูก"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:text="เลือกแผนการปลูก"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:hint="ชื่อแผนการปลูก"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

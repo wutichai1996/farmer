@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    tools:context=".Createproject2Fragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="คาดหวัง"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ผลผลิตที่คาดหวังโครงการ"
+            android:textColor="@android:color/black" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:hint="ผลผลิตที่คาดหวังโครงการ" />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlAddfield"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลือกแปลง"
+            android:textColor="@android:color/black"
+            />
+
+        <Spinner
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnAddfield"
+        android:text="เพิ่มแปลง"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จำนวนต้น"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="จำนวนต้น" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ผลผลิตที่คาดหวัง"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="ผลผลิตที่คาดหวัง" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="วันที่เริ่มโครงการ"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:text="กรุณาเลือกวันที่" />
+
+        <Button
+            android:id="@+id/btnDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลือกวันที่" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="วันที่เริ่มเก็บเกี่ยวผลผลิต"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:text="กรุณาเลือกวันที่" />
+
+        <Button
+            android:id="@+id/btnDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลือกวันที่" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="วันที่สิ้นสุดโครงการ"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvDate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:text="กรุณาเลือกวันที่" />
+
+        <Button
+            android:id="@+id/btnDate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลือกวันที่" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <Button
+        android:id="@+id/btnBackproject"
+        android:layout_weight="1"
+        android:text="ย้อนกลับ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="4"
+            android:text="สร้างโครงการ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+    
+</LinearLayout>

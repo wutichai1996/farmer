@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical"
+    tools:context=".AddwarehouseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อคลังปัจจัยการผลิต"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ชื่อคลัง" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbSolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="รายเดี่ยว" />
+
+        <RadioButton
+            android:id="@+id/rdbPaty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กลุ่มเครือข่าย" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTexthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="รายเดี่ยว"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lnlHide1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="เลือกเครือข่าย"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlHide2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลือกลูกไร่/หัวจุด"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlAddfreld"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลือกแปลงที่ไปเก็บ"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/spnPlant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddplantlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="เพิ่มแปลงปลูก" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="ลงทะเบียนคลังปัจจัยการผลิต" />
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:src="@drawable/register" />
+
+            <TextView
+                android:textColor="#008578"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลส่วนตัว"
+                android:textSize="23sp" />
+
+
+
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:outlineAmbientShadowColor="#008578"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ชื่อ" />
+
+
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:outlineSpotShadowColor="#008578"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="นามสกุล" />
+
+
+            <EditText
+                android:maxLines="1"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="เลขบัตรประชาชน"
+                android:inputType="number"
+                android:maxLength="13" />
+
+            <TextView
+                android:textColor="#008578"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ที่อยู่"
+                android:textSize="23sp" />
+
+            <EditText
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ที่อยู่" />
+
+            <TextView
+                android:textColor="#008578"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลการติดต่อ"
+                android:textSize="23sp" />
+
+            <EditText
+                android:maxLines="1"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtPhonnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="เบอร์โทรศัพท์"
+                android:inputType="number"
+                android:maxLength="10" />
+
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail" />
+
+            <TextView
+                android:textColor="#008578"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="23sp" />
+
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+                android:inputType="text"
+                android:maxLines="1"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username" />
+
+            <TextView
+                android:textColor="#008578"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="23sp" />
+
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+                android:maxLines="1"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:textColor="#008578"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:textSize="23sp" />
+
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+                android:maxLines="1"
+                android:shadowColor="#4cb3a9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/edtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:background="#4cb3a9"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="สมัครสมาชิก"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

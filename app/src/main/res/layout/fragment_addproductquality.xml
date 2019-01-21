@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".AddproductqualityFragment">
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="คุณภาพของผลผลิต"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@android:color/black"
+        android:text="เลือกพืช"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <Spinner
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="ชื่อคถณภาพของผลผลิต"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:text="ระดับเกรดของผลผลิต"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="5"
+            android:text="คำอธิบายเกรด"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlAddfreld"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="ระดับเกรด"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:hint="คำอธิบายเกรด"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnAddfield"
+        android:text="เพิ่มเกรด"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:enabled="false"
+            android:hint="ไม่ได้คัดแยก"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:enabled="false"
+            android:hint="ผลผลิตไม่ถูกคัดแยก"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="สร้างเกรดของผลผลิต"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>

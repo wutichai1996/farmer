@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="แปลงปลูก"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbPlant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/plant" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="ปัจจัยการผลิต"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbProductfactor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/fertilizer" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="คลังปัจจัยการผลิต"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbFactorhouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/barn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="คุณภาพผลผลิต"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbProductquality"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/carrot" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_marginRight="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="คลังผลผลิต"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbProductivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/farm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="แผนการปลูก"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbPlan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/book" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="โครงการเพาะปลูก"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbProjectlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/pa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:background="#D0D3D4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="รายงาน"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/imbReport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#D0D3D4"
+                android:src="@drawable/presentation" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>

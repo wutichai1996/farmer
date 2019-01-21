@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddproductoutputFragment">
+
+    <RadioGroup
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rdbSolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รายเดี่ยว" />
+
+        <RadioButton
+            android:id="@+id/rdbPaty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กลุ่มเครือข่าย" />
+
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/lnlHide1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:text="เลือกเครือข่าย"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="เลือกคลังผลผลิต"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="ส่งผลผลิตให้กับ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="ชื่อผู้ซื้อ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="ยืนยันการส่งออกผลผลิต"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
